@@ -6,15 +6,17 @@
 package FactoryPackage;
 
 import Principal.Heroe;
+import Principal.Marvel;
+import Principal.DC;
 import Principal.Villano;
 
-public class VillanoFactory implements AbstractFactory{
-    public Villano getVillano() {
-       return new Villano ("Marvel","Thor");
-    } 
+public class HeroeFactory implements AbstractFactory{
+    public Heroe getHeroe (){
+        return new Heroe ("Marvel","Thor");    }
 
     @Override
-    public Heroe getHeroe() {
+    public Villano getVillano() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
 }
